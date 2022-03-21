@@ -17,8 +17,7 @@ var urlencodedParser = bodyParser.urlencoded({ extended: false });
 app.get("/api", (req, res) => {
   res.json({
     message: "Welcome to the API",
-    fart: "i am farting XD",
-    gaming: Date.now() % 23023,
+    currentTime: Date.now() % 23023,
   });
 });
 
